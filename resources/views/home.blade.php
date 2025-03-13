@@ -60,11 +60,11 @@
 				</div>
 				<div class="col-lg-5">
 					<div class="slides">
-						<img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid active">
-						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
-						<img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid">
-						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
-						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
+						<img src="{{ asset('images/1.jpg') }}" alt="Image" class="img-fluid active">
+						<img src="{{ asset('images/2.jpg') }}" alt="Image" class="img-fluid">
+						<img src="{{ asset('images/3.jpg') }}" alt="Image" class="img-fluid">
+						<img src="{{ asset('images/2.jpg') }}" alt="Image" class="img-fluid">
+						<img src="{{ asset('images/2.jpg') }}" alt="Image" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 	</div>
 
 
-	<div class="untree_co-section">
+	<!-- <div class="untree_co-section">
 		<div class="container">
 			<div class="row mb-5 justify-content-center">
 				<div class="col-lg-6 text-center">
@@ -127,7 +127,7 @@
 
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="untree_co-section count-numbers py-5">
 		<div class="container">
@@ -137,7 +137,7 @@
 						<div class="counter">
 							<span class="" data-number="9313">0</span>
 						</div>
-						<span class="caption">No. of Travels</span>
+						<span class="caption">Jumlah pelawat</span>
 					</div>
 				</div>
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
@@ -145,15 +145,15 @@
 						<div class="counter">
 							<span class="" data-number="8492">0</span>
 						</div>
-						<span class="caption">No. of Clients</span>
+						<span class="caption">Jumlah profil</span>
 					</div>
 				</div>
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
 					<div class="counter-wrap">
 						<div class="counter">
-							<span class="" data-number="100">0</span>
+							<span class="" data-number="400">0</span>
 						</div>
-						<span class="caption">No. of Employees</span>
+						<span class="caption">Jumlah match</span>
 					</div>
 				</div>
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
@@ -161,7 +161,7 @@
 						<div class="counter">
 							<span class="" data-number="120">0</span>
 						</div>
-						<span class="caption">No. of Countries</span>
+						<span class="caption">Jumlah pertukaran</span>
 					</div>
 				</div>
 			</div>
@@ -170,7 +170,7 @@
 
 
 
-	<div class="untree_co-section">
+	<!-- <div class="untree_co-section">
 		<div class="container">
 			<div class="row text-center justify-content-center mb-5">
 				<div class="col-lg-7"><h2 class="section-title text-center">Popular Destination</h2></div>
@@ -242,23 +242,25 @@
 			</div>
 
 		</div>
-	</div>
+	</div> -->
 
 
 	<div class="untree_co-section testimonial-section mt-5">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-7 text-center">
-					<h2 class="section-title text-center mb-5">Testimonials</h2>
+					<h2 class="section-title text-center mb-5">Apa kata mereka?</h2>
 
 					<div class="owl-single owl-carousel no-nav">
 						<div class="testimonial mx-auto">
 							<figure class="img-wrap">
 								<img src="images/person_2.jpg" alt="Image" class="img-fluid">
 							</figure>
-							<h3 class="name">Adam Aderson</h3>
+							<h3 class="name">Dr. Haliza</h3>
 							<blockquote>
-								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							    <h4 class="name"> "Sangat membantu dalam pertukaran penempatan!"</h4>
+								<p>&ldquo;Aplikasi ini sangat memudahkan proses pertukaran penempatan antara pegawai kesihatan. 
+									Sebelum ini, semuanya perlu dilakukan secara manual, tetapi dengan Suka Sama Suka, saya dapat mencari rakan pertukaran dengan mudah dan cepat.&rdquo;</p>
 							</blockquote>
 						</div>
 
@@ -266,9 +268,10 @@
 							<figure class="img-wrap">
 								<img src="images/person_3.jpg" alt="Image" class="img-fluid">
 							</figure>
-							<h3 class="name">Lukas Devlin</h3>
+							<h3 class="name">Dr. Luqman</h3>
 							<blockquote>
-								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<h4 class="name">"Mudah digunakan dan mesra pengguna"</h4>
+								<p>&ldquo;Reka bentuk aplikasi sangat intuitif dan mudah digunakan. Saya hanya perlu memasukkan maklumat penempatan saya, dan sistem akan mencadangkan padanan yang sesuai. Sangat praktikal!&rdquo;</p>
 							</blockquote>
 						</div>
 
@@ -276,9 +279,11 @@
 							<figure class="img-wrap">
 								<img src="images/person_4.jpg" alt="Image" class="img-fluid">
 							</figure>
-							<h3 class="name">Kayla Bryant</h3>
+							<h3 class="name">Dr Ruslan</h3>
 							<blockquote>
-								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<h4 class="name"> "Alternatif terbaik untuk staf kesihatan"</h4>
+								<p>&ldquo;Aplikasi ini memberikan alternatif yang baik kepada pegawai kesihatan yang ingin bertukar tempat kerja atas sebab tertentu. 
+									Sangat membantu untuk mencari pasangan pertukaran yang bersetuju tanpa perlu melalui proses yang rumit.&rdquo;</p>
 							</blockquote>
 						</div>
 
@@ -290,7 +295,7 @@
 	</div>
 
 
-	<div class="untree_co-section">
+	<!-- <div class="untree_co-section">
 		<div class="container">
 			<div class="row justify-content-center text-center mb-5">
 				<div class="col-lg-6">
@@ -379,7 +384,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="untree_co-section">
 		<div class="container">
@@ -390,7 +395,7 @@
 						<a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=mwtbEGNABWU" data-fancybox>
 							<span></span>
 						</a>
-						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid rounded-20">
+						<img src="{{ asset('images/2.jpg') }}" alt="Image" class="img-fluid rounded-20">
 					</figure>
 				</div>
 
@@ -405,7 +410,7 @@
 						<li>Pertukaran Berjaya!</li>
 					</ul>
 
-					<p><a href="#" class="btn btn-primary">Mula sekarang</a></p>
+					<p><a href="#" class="btn btn-primary">Mula</a></p>
 
 					
 				</div>
