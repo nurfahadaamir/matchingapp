@@ -5,15 +5,7 @@
 
 @section('content')
 
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
-
+	
 	
 
 
@@ -403,25 +395,17 @@
 				</div>
 
 				<div class="col-lg-5">
-					<h2 class="section-title text-left mb-4">Take a look at Tour Video</h2>
+					<h2 class="section-title text-left mb-4">3 Langkah Mudah Penggunaan</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 
-					<p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
+					
 					<ul class="list-unstyled two-col clearfix">
-						<li>Outdoor recreation activities</li>
-						<li>Airlines</li>
-						<li>Car Rentals</li>
-						<li>Cruise Lines</li>
-						<li>Hotels</li>
-						<li>Railways</li>
-						<li>Travel Insurance</li>
-						<li>Package Tours</li>
-						<li>Insurance</li>
-						<li>Guide Books</li>
+						<li>Isi Profil Anda</li>
+						<li>Mencari Padanan secara automatik</li>
+						<li>Pertukaran Berjaya!</li>
 					</ul>
 
-					<p><a href="#" class="btn btn-primary">Get Started</a></p>
+					<p><a href="#" class="btn btn-primary">Mula sekarang</a></p>
 
 					
 				</div>
@@ -435,8 +419,8 @@
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-md-12">
-					<h2 class="mb-2 text-white">Lets you Explore the Best. Contact Us Now</h2>
-					<p class="mb-4 lead text-white text-white-opacity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, fugit?</p>
+					<h2 class="mb-2 text-white">Pilihan Anda, Pertukaran Mudah, Keseimbangan Terjaga</h2>
+					<!-- <p class="mb-4 lead text-white text-white-opacity">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, fugit?</p> -->
 					<p class="mb-0"><a href="booking.html" class="btn btn-outline-white text-white btn-md font-weight-bold">Get in touch</a></p>
 				</div>
 			</div>

@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-    <title>Matchmaking App</title>
+    <title>Suka Sama Suka </title>
     
 </head>
 <body>
@@ -39,12 +39,12 @@
     <nav class="site-nav">
         <div class="container">
             <div class="site-navigation">
-                <a href="{{ url('/') }}" class="logo m-0">Tour <span class="text-primary">.</span></a>
+                <a href="{{ url('/') }}" class="logo m-0">Suka Sama Suka <span class="text-primary">.</span></a>
 
                 <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-                    <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                    <li class="has-children">
-                        <a href="#">Dropdown</a>
+                    <li class="/"><a href="{{ url('/') }}">Home</a></li>
+                    <!-- <li class="has-children">
+                        <a href="#">Terma dan Syarat</a>
                         <ul class="dropdown">
                             <li><a href="#">Elements</a></li>
                             <li><a href="#">Menu One</a></li>
@@ -58,19 +58,19 @@
                             </li>
                             <li><a href="#">Menu Three</a></li>
                         </ul>
-                    </li>
-                    <li><a href="{{ url('/services') }}">Services</a></li>
-                    <li><a href="{{ url('/about') }}">About</a></li>
-                    <li><a href="{{ url('/contact') }}">Contact Us</a></li>
+                    </li> -->
+                    <li><a href="{{ url('/') }}">Terma dan syarat</a></li>
+                    <li><a href="{{ url('/') }}">Hubungi Kami</a></li>
 
                     @guest
                     <li><a href="{{ url('/login') }}" class="btn btn-primary">Login</a></li>
                 @else
                     <!-- Dropdown for Logged-in User -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn btn-light" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ Auth::user()->name }}
-                        </a>
+					<button class="btn btn-primary btn-block dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     {{ Auth::user()->name }}
+                    </button>
+
                         <div class="dropdown-menu" aria-labelledby="userDropdown">
                             <a class="dropdown-item" href="{{ url('/profile') }}">Profile</a>
                             <div class="dropdown-divider"></div>
@@ -103,8 +103,8 @@
 				<div class="row">
 					<div class="col-md-6 col-lg-4">
 						<div class="widget">
-							<h3 class="heading">About Tour</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3 class="heading">Tentang Suka Sama Suka</h3>
+							<p>Aplikasi pertukaran penempatan kakitangan kementerian kesihatan</p>
 						</div>
 						<div class="widget">
 							<ul class="list-unstyled social">
@@ -121,31 +121,34 @@
 					</div>
 					<div class="col-md-6 col-lg-2 pl-lg-5">
 						<div class="widget">
-							<h3 class="heading">Pages</h3>
+							<h3 class="heading">Halaman</h3>
 							<ul class="links list-unstyled">
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#">Halamana Utama</a></li>
+								<li><a href="#">Terma dan Syarat</a></li>
+								<li><a href="#">Hubungi kami</a></li>
+								<li><a href="#">Profil</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-2">
 						<div class="widget">
-							<h3 class="heading">Resources</h3>
+							<h3 class="heading">Bahagian Terlibat</h3>
 							<ul class="links list-unstyled">
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#">Bahagian Sumber Manusia</a></li>
+								<li><a href="#">Bahagian Pengurusan Maklumat</a></li>
+								<li><a href="#">Bahagian Kesihatan Digital</a></li>
+								<li><a href="#">Health Performance Unit</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="widget">
-							<h3 class="heading">Contact</h3>
+							<h3 class="heading">Hubungi</h3>
 							<ul class="list-unstyled quick-info links">
-								<li class="email"><a href="#">mail@example.com</a></li>
-								<li class="phone"><a href="#">+1 222 212 3819</a></li>
-								<li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
+								<li class="email"><a href="#">helpdesk@moh.gov.my</a></li>
+								<li class="phone"><a href="#">+03 8000 8000</a></li>
+								<li class="address"><a href="#">Kompleks E, Blok E1, E3, E6, E7 & E10, Pusat Pentadbiran Kerajaan Persekutuan, 62590, 
+									62000 Putrajaya, Wilayah Persekutuan Putrajaya</a></li>
 							</ul>
 						</div>
 					</div>
@@ -159,7 +162,7 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
-						<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co" class="link-highlight">Untree.co</a> <!-- License information: https://untree.co/license/ -->Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
+						<p>Hakcipta Terpelihara &copy;<script>document.write(new Date().getFullYear());</script> - Kementerian Kesihatan Malaysia
 						</p>
 					</div>
 					
@@ -174,7 +177,7 @@
 			<span class="sr-only">Loading...</span>
 		</div>
 	</div>
-
+</div>
 	<script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
 <script src="{{ asset('js/popper.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
