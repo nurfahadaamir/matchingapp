@@ -6,14 +6,19 @@
 
     <div class="card mx-auto" style="max-width: 600px;">
         <div class="card-body">
-            <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">
+           <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
 
                 <div class="form-group">
-                    <label>Profile Picture</label>
-                    <input type="file" name="profile_picture" class="form-control">
-                </div>
+                            <label>Profile Picture</label>
+                            <input type="file" name="profile_picture" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" name="username" class="form-control" value="{{ Auth::user()->username }}">
+                        </div>
 
                 <div class="form-group">
                    <label>Skim</label>
@@ -24,7 +29,7 @@
                     <option value="Farmasi" {{ Auth::user()->skim == 'Farmasi' ? 'selected' : '' }}>Farmasi</option>
                     <option value="Pergigian" {{ Auth::user()->skim == 'Pergigian' ? 'selected' : '' }}>Pergigian</option>
                    </select>
-                </div>
+                </div> 
 
 
                 <div class="form-group">

@@ -37,40 +37,32 @@
 	</div>
 
     <nav class="site-nav">
-        <div class="container">
-            <div class="site-navigation">
-                <a href="{{ url('/') }}" class="logo m-0">Suka Sama Suka <span class="text-primary">.</span></a>
+    <div class="container">
+        <div class="site-navigation">
+            <a href="{{ url('/') }}" class="logo m-0">Suka Sama Suka <span class="text-primary">.</span></a>
 
-                <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-                    <li class="/"><a href="{{ url('/') }}">Home</a></li>
-                    <!-- <li class="has-children">
-                        <a href="#">Terma dan Syarat</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Elements</a></li>
-                            <li><a href="#">Menu One</a></li>
-                            <li class="has-children">
-                                <a href="#">Menu Two</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Sub Menu One</a></li>
-                                    <li><a href="#">Sub Menu Two</a></li>
-                                    <li><a href="#">Sub Menu Three</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Menu Three</a></li>
-                        </ul>
-                    </li> -->
-                    <li><a href="{{ url('/') }}">Terma dan syarat</a></li>
-                    <li><a href="{{ url('/') }}">Hubungi Kami</a></li>
+            <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li><a href="{{ url('/') }}">Terma dan Syarat</a></li>
+                <li><a href="{{ url('/') }}">Hubungi Kami</a></li>
 
-                    @guest
+                @guest
                     <li><a href="{{ url('/login') }}" class="btn btn-primary">Login</a></li>
                 @else
-                    <!-- Dropdown for Logged-in User -->
-                    <li class="nav-item dropdown">
-					<button class="btn btn-primary btn-block dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     {{ Auth::user()->name }}
-                    </button>
+                    <!-- Match Dropdown Menu -->
+                    <li class="has-children">
+                        <a href="#">Match</a>
+                        <ul class="dropdown">
+                            <li><a href="{{ route('available.matches') }}">Find Match</a></li>
+                            <li><a href="{{ route('match.requests') }}">Match Requests</a></li>
+                        </ul>
+                    </li>
 
+                    <!-- User Profile Dropdown -->
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-primary btn-block dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ Auth::user()->name }}
+                        </button>
                         <div class="dropdown-menu" aria-labelledby="userDropdown">
                             <a class="dropdown-item" href="{{ url('/profile') }}">Profile</a>
                             <div class="dropdown-divider"></div>
@@ -81,14 +73,15 @@
                         </div>
                     </li>
                 @endguest
-                </ul>
+            </ul>
 
-                <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
-                    <span></span>
-                </a>
-            </div>
+            <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
+            </a>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     
     <div class="container-fluid mt-4">

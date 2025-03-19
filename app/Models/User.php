@@ -21,8 +21,7 @@ class User extends Authenticatable
         'name', 'email', 'username', 'password', 'profile_picture', 
         'skim', 'gred', 'fasiliti', 'jabatan', 'pengalaman', 'jenis_fasiliti', 'negeri'
     ];
-    
-
+   
 
 
     /**
